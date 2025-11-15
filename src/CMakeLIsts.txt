@@ -1,0 +1,16 @@
+# Add executable
+add_executable(proj 
+               main.cpp 
+               Transducer.cpp
+               TransducerCreator.cpp
+               FileUtils.cpp
+               StateHashes.cpp
+               StateSignature.cpp
+               TestUtils.cpp
+               creator2.cpp
+               test.cpp)
+
+target_link_libraries(proj PRIVATE fmt::fmt)
+
+# Install target
+install(TARGETS proj DESTINATION bin)
